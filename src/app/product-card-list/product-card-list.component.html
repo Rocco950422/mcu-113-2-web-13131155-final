@@ -3,9 +3,10 @@
   [productName]="product.name"
   [authors]="product.authors"
   [company]="product.company"
-  [(isShow)]="product.isShow"
+  [isShow]="product.isShow"
   [photoUrl]="product.photoUrl"
   [price]="product.price"
+  (view)="view.emit(product)"
 ></app-product-card>
 }
 <app-pagination [totalCount]="products.length" [(pageIndex)]="pageIndex" pageSize="3"></app-pagination>
