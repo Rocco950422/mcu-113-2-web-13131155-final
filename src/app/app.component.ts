@@ -15,7 +15,7 @@ export class AppComponent {
   products: Product[] = [
     new Product({
       name: 'A 產品',
-      authors: ['作者甲', '作者乙', '作者丙'],
+      authors: ['作者 A', '作者 B', '作者 C'],
       company: '博碩文化',
       isShow: true,
       photoUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
@@ -23,7 +23,7 @@ export class AppComponent {
     }),
     new Product({
       name: 'B 產品',
-      authors: ['作者甲', '作者乙', '作者丙'],
+      authors: ['作者 A', '作者 B', '作者 C'],
       company: '博碩文化',
       isShow: true,
       photoUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
@@ -31,7 +31,7 @@ export class AppComponent {
     }),
     new Product({
       name: 'C 產品',
-      authors: ['作者甲', '作者乙', '作者丙'],
+      authors: ['作者 A', '作者 B', '作者 C'],
       company: '博碩文化',
       isShow: true,
       photoUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
@@ -39,7 +39,7 @@ export class AppComponent {
     }),
     new Product({
       name: 'D 產品',
-      authors: ['作者甲', '作者乙', '作者丙'],
+      authors: ['作者 A', '作者 B', '作者 C'],
       company: '博碩文化',
       isShow: true,
       photoUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
@@ -47,7 +47,7 @@ export class AppComponent {
     }),
     new Product({
       name: 'E 產品',
-      authors: ['作者甲', '作者乙', '作者丙'],
+      authors: ['作者 A', '作者 B', '作者 C'],
       company: '博碩文化',
       isShow: true,
       photoUrl: 'https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img',
