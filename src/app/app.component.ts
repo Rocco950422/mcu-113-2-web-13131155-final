@@ -9,6 +9,9 @@ import { Product } from './models/product';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   products: Product[] = [
     new Product({
       name: 'A 產品',
