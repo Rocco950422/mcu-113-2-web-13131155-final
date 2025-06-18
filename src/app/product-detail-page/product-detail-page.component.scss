@@ -1,0 +1,51 @@
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-detail {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  background: #eee;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.special-price {
+  color: red;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #e0e0e0;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #007bff;
+  color: white;
+}

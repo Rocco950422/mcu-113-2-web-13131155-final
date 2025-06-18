@@ -1,1 +1,17 @@
-<p>product-detail-page works!</p>
+<div class="container">
+  <div class="product-detail">
+    <img class="product-image" src="https://api.fnkr.net/testimg/200x200/DDDDDD/999999/?text=img" alt="Product image" />
+
+    <div class="product-info">
+      <h2>A 商品</h2>
+      <p><strong>作者</strong>　作者 A, 作者 B, 作者 C</p>
+      <p><strong>公司</strong>　博碩文化</p>
+      <p><strong>價格</strong>　$1,580.00 <span class="special-price">特價</span></p>
+
+      <div class="actions">
+        <button class="btn" (click)="goBack()">返回</button>
+        <button class="btn primary" (click)="addToCart()">加入購物車</button>
+      </div>
+    </div>
+  </div>
+</div>

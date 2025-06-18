@@ -22,6 +22,10 @@ export class ProductCardComponent {
 
   readonly view = output<void>();
 
+  add() {
+    alert('已加入購物車');
+  }
+
   @HostBinding('class')
   class = 'app-product-card';
 }

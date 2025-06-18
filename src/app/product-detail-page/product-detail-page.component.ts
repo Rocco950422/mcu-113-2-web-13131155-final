@@ -1,8 +1,20 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 @Component({
-  selector: 'app-product-detail-page',
-  imports: [],
+  selector: 'app-product-detail',
   templateUrl: './product-detail-page.component.html',
-  styleUrl: './product-detail-page.component.scss',
+  styleUrls: ['./product-detail-page.component.scss'],
 })
-export class ProductDetailPageComponent {}
+export class ProductDetailComponent {
+  product: any;
+  constructor(private router: Router) {}
+
+  goBack() {
+    this.router.navigate(['/products']);
+  }
+
+  addToCart() {
+    alert('已加入購物車');
+  }
+}

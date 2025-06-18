@@ -2,15 +2,21 @@ import { Component, inject } from '@angular/core';
 import { ProductCardListComponent } from '../product-card-list/product-card-list.component';
 import { Product } from '../models/product';
 import { Router } from '@angular/router';
+import { ShoppingCartService } from '../shopping-cart.service';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-product-page',
-  imports: [ProductCardListComponent],
+  imports: [ProductCardListComponent, CommonModule, FormsModule],
   templateUrl: './product-page.component.html',
   styleUrl: './product-page.component.scss',
 })
 export class ProductPageComponent {
   private router = inject(Router);
+  private cartService = inject(ShoppingCartService);
+  searchTerm: string = '';
+
   products: Product[] = [
     new Product({
       name: 'A 產品',
@@ -56,5 +62,14 @@ export class ProductPageComponent {
 
   onView(product: Product): void {
     this.router.navigate(['product', product.name]);
+  }
+
+  addToCart(product: any) {
+    this.cartService.addItem(product);
+    this.router.navigate(['/cart']);
+  }
+
+  search() {
+    console.log('使用者點了查詢，關鍵字:', this.searchTerm);
   }
 }

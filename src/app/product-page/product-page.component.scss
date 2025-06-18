@@ -2,3 +2,27 @@
   display: block;
   padding: 20px;
 }
+.btn-search {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid;
+  width: 50px;
+  padding: 1px 1px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+
+  &:active {
+    background-color: #004080;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+}
